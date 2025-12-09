@@ -8,16 +8,17 @@ body {
 header {
   border-bottom: 1px solid #ccc;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  top: 0;
   background-color: #f5f5f5;
+  gap: 1em 2em;
   nav ul {
     list-style: none;
     display: flex;
     gap: 1em;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 article {
@@ -39,6 +40,9 @@ button {
 main {
   border-right: 1px solid #ccc;
 }
+#siteIcon {
+  width: 80px;
+}
 #shoppingCart {
   display: flex;
   flex-direction: column;
@@ -53,6 +57,7 @@ main {
     gap: 1em;
     img {
       width: 80px;
+      border-radius: 0.8em;
     }
     div {
       display: flex;
@@ -80,6 +85,14 @@ footer {
   }
 }
 @media screen and (max-width: 720px) {
+  body {
+    grid-template: "header" auto
+    "main" auto
+    "footer" auto /auto !important;
+  }
+  header {
+    flex-direction: column;
+  }
   nav {
     margin-block: 1em;
     ul {
@@ -89,8 +102,17 @@ footer {
       }
     }
   }
+  main {
+    border: none;
+  }
+  aside {
+    display: none;
+  }
   footer {
     flex-direction: column;
+  }
+  #breadSection {
+    flex-wrap: nowrap;
   }
   #copyright {
     border-bottom: 1px solid #ccc;
