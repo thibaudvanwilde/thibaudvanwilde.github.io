@@ -43,6 +43,9 @@ main {
 #siteIcon {
   width: 80px;
 }
+#breadSection {
+  padding: 1em;
+}
 #shoppingCart {
   display: flex;
   flex-direction: column;
@@ -113,6 +116,7 @@ footer {
   }
   #breadSection {
     flex-wrap: nowrap;
+    padding: 0.5em;
   }
   #copyright {
     border-bottom: 1px solid #ccc;
