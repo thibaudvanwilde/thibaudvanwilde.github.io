@@ -13,7 +13,7 @@ body {
 main {
   font-size: 1.5em;
   grid-area: main;
-  padding: 2em;
+  border: none;
 }
 
 aside {
@@ -58,7 +58,7 @@ main > article {
   display: flex;
   justify-content: space-between;
   gap: 2em;
-  margin-bottom: 3em;
+  margin-block: 1em;
   align-items: center;
   section {
     flex: 1;
@@ -88,7 +88,6 @@ main > article {
 /* Tablet - 720px to 1024px */
 @media screen and (max-width: 1024px) {
   main {
-    padding: 1em;
     font-size: 1.2em;
     > article {
       flex-direction: column;
@@ -110,12 +109,11 @@ main > article {
   }
 
   main {
-    padding: 1em;
     font-size: 1em;
     > article {
       flex-direction: column;
       gap: 1em;
-      margin-bottom: 2em;
+      margin-block: 1em;
       section {
         padding: 0;
         margin: 0;
