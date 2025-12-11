@@ -65,7 +65,8 @@ fieldset {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1em;
-  input {
+  input, select {
+    background-color: #f5f5f5;
     padding: 0.5em;
     font-size: 1em;
     border-radius: 4px;
@@ -215,5 +216,18 @@ footer {
         border: none;
       }
     }
+  }
+}
+@media screen and (max-width: 1024px) {
+  fieldset {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  fieldset {
+    grid-template-columns: 1fr;
   }
 }

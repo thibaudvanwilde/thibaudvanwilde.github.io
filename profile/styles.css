@@ -12,6 +12,12 @@ main, aside {
 }
 main {
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+h2 {
+  margin: 0;
 }
 aside {
   grid-area: sidebar;
@@ -19,16 +25,6 @@ aside {
 footer {
   grid-area: footer;
 }
-@media screen and (max-width: 1024px) {
-  fieldset {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  form {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  fieldset {
-    grid-template-columns: 1fr;
-  }
+button {
+  width: fit-content;
 }
