@@ -29,7 +29,6 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-/* test */
 button:hover {
   background-color: #333;
 }

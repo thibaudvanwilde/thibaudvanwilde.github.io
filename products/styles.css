@@ -26,9 +26,6 @@ main {
   gap: 8px;
   flex-wrap: wrap;
 }
-#shoppingCart {
-  grid-area: sidebar;
-}
 article {
   width: 120px;
 }
